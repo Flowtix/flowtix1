@@ -1,0 +1,39 @@
+AtlasUI:
+
+<AtlasUI>:
+    orientation: "vertical"
+    padding: 10
+    spacing: 10
+
+    Button:
+        text: "Connect YouTube"
+        on_press: root.connect_youtube()
+
+    TextInput:
+        id: url
+        hint_text: "YouTube Link"
+
+    Button:
+        text: "Fetch Info"
+        on_press: root.fetch_info()
+
+    TextInput:
+        id: title
+        hint_text: "Title"
+
+    TextInput:
+        id: description
+        hint_text: "Description"
+
+    TextInput:
+        id: tags
+        hint_text: "Tags"
+
+    Button:
+        text: "Add & Upload"
+        on_press: root.add_task()
+
+    TextInput:
+        id: log
+        text: ""
+        readonly: True
